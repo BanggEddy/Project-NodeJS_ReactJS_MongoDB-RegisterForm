@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const express = require('express'); //Export Express
 const routeur = express.Router()
-const SignUpTemplateCopy = require('../models/SignUpModels')
+const SignUpTemplateCopy = require('./models/SignUpModel')
 
 
 //.pot = Post Request
