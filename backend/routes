@@ -1,0 +1,10 @@
+const { Router } = require('express');
+const express = require('express'); //Export Express
+const routeur = express.Router()
+
+//.pot = Post Request
+Router.post('/signup', (request, response) => {
+    response.send('send')
+})
+
+module.exports = router
