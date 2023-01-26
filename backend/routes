@@ -1,12 +1,10 @@
-const { Router } = require('express');
-const express = require('express'); //Export Express
-const routeur = express.Router()
+const express = require('express') //Export Express
 const SignUpTemplateCopy = require('./models/SignUpModel')
-
+const router = express.Router()
 
 //.pot = Post Request
-Router.post('/signup', (request, response) => { //When we're in signup page :
-    const signedUpServer = new SignUpTemplateCopy({ //When they submit, they create a new SignUp
+router.post('/signup', (request, response) => { //When we're in signup page :
+    const signedUpUser = new SignUpTemplateCopy({ //When they submit, they create a new SignUp
         fullName:request.body.fullName, //grab the fullName of the request they enter (request = post)
         username:request.body.username,
         email:request.body.email,
